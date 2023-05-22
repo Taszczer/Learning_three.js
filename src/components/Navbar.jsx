@@ -8,6 +8,7 @@ import { logo, menu, close} from "../assets"
 const Navbar = () => {
 
   const [active, setActive]=useState("") 
+  const [toggle, setToggle] = useState(false)
   
 
   return (
@@ -25,7 +26,7 @@ const Navbar = () => {
       }}
       > 
       <img src={logo} alt="logo" className='w-9 h-9 object-contain'/>
-      <p className=' text-white text-[18px] font-bold cursor-pointer flex'> Dima _ <span className='sm:block hidden'>  Three.js student</span>
+      <p className=' text-white text-[18px] font-bold cursor-pointer flex'>I'm Three.js student
       </p>
       </Link>
 
@@ -44,12 +45,16 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-      </div> 
+      
       <div className='sm:hidden flex flex-1 justify-end items-center'>
-            <img src={menu}
-             alt="menu"
-             className='w-[28px] h-[28px] object-contain cursor-pointer' />
+      <img
+            src={toggle ? close : menu}
+            alt='menu'
+            className='w-[28px] h-[28px] object-contain'
+            onClick={() => setToggle(!toggle)}
+          />
       </div>
+      </div> 
     </nav>///amogus
   )
 }
