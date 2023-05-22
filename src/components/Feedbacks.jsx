@@ -4,6 +4,7 @@ const Feedbacks = () => {
   return (
     <div>Feedbacks</div>
   )
-}
+} //amogus
 
-export default Feedbacks
+export default Feedbacks 
+
