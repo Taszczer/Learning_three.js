@@ -53,6 +53,11 @@ const Navbar = () => {
             className='w-[28px] h-[28px] object-contain'
             onClick={() => setToggle(!toggle)}
           />
+          <div
+            className={`${
+              !toggle ? "hidden" : "flex"
+            } p-6 bg-current absolute top-20 right-0 mx-4 my-2 h-[70px] min-w-[140px] z-10 rounded-xl`}
+          ></div>
       </div>
       </div> 
     </nav>///amogus
