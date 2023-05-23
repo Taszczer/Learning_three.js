@@ -57,7 +57,26 @@ const Navbar = () => {
             className={`${
               !toggle ? "hidden" : "flex"
             } p-6 bg-current absolute top-20 right-0 mx-4 my-2 h-[70px] min-w-[140px] z-10 rounded-xl`}
-          ></div>
+          >
+            <ul className='list-none flex  flex-row  gap-10 '>
+          {navLinks.map((link) =>(
+            <li 
+            key={link.id}
+            className={`${
+              active === link.title
+              ? "text-black"
+              : "text-secondary"
+            } hover:text-black text-[18px] font-medium cursor-pointer `}
+            onClick={() => {
+              setToggle(!toggle)
+              setActive(link.title)
+            }}
+            >
+              <a href={`#${link.id}`}>{link.title}</a>
+            </li>
+          ))}
+        </ul>
+          </div>
       </div>
       </div> 
     </nav>///amogus
