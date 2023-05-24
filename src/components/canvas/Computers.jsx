@@ -14,8 +14,19 @@ const Computers = () => {
     <mesh>
       <hemisphereLight intensity={0.15} 
       groundColor="black"  />
+      <pointLight intensity={1} />
+      <primitive 
+      object={computer.scene}
+      />
     </mesh> //mesh using for light
   )
+}
+
+const ComputersCanvas = () => {
+  return
+    <Canvas>
+      
+    </Canvas>
 }
 
 export default Computers
