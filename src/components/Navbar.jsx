@@ -26,7 +26,7 @@ const Navbar = () => {
       }}
       > 
       <img src={logo} alt="logo" className='w-9 h-9 object-contain'/>
-      <p className=' text-white text-[18px] font-bold cursor-pointer flex'>I'm Three.js student
+      <p className=' text-white text-[18px] font-bold cursor-pointer flex'>Dima &nbsp; <span> Three.js student </span>
       </p>
       </Link>
 
@@ -55,7 +55,7 @@ const Navbar = () => {
           />
           <div
             className={`${
-              !toggle ? "hidden" : "flex"
+            !toggle ? "hidden" : "flex"
             } p-6 bg-current absolute top-20 right-0 mx-4 my-2 h-[70px] min-w-[140px] z-10 rounded-xl`}
           >
             <ul className='list-none flex  flex-row  gap-10 '>
