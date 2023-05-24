@@ -13,12 +13,17 @@ const Hero = () => {
           </div>
 
           <div>
-            <h1 className={`${styles.heroHeadText} text-white`}>Hello, who I am? 
+            <h1 className={`${styles.heroHeadText} text-white`}>Hello 
               <span className='text-[#915eff]'> I'm react student</span>
             </h1>
+            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+              I starting developing websites using 3D. <br className='sm:block hidden' /> I'm creating designe and applications   
+            </p>
           </div>
-
         </div>
+
+
+          <ComputersCanvas />
     </section>
   )
 }
