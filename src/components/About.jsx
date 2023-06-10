@@ -8,7 +8,19 @@ import { fadeIn, textVariant } from '../utils/motion'
 
 const About = () => {
   return (
-    <div>About</div>
+    <>
+    <motion.div>
+      <p className={styles.sectionSubText}>Introduction</p>
+      <h2 className={styles.sectionHeadText}>Overview</h2>
+    </motion.div>
+    <motion.p 
+      variants={fadeIn("", "", 0.1, 1)}
+      className='mt-4 text-secondary text-[17px] max-w-2xl leading-[30px]'
+    > 
+      Hello, I'm React programer. I'm only 16 years old. Now I'm learning Tailwind and Three.js . 
+      I am a very purposeful and persistent person. I really like programming and I am sure that this will be my job 
+    </motion.p>
+    </>
   )
 }
 
