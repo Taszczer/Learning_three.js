@@ -6,6 +6,12 @@ import { styles } from '../styles'
 import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 
+const ServiceCard = ({ index, title, icon }) => {
+  return (
+    <p> {title} </p>
+  )
+}
+
 const About = () => {
   return (
     <>
@@ -20,8 +26,15 @@ const About = () => {
       Hello, I'm React programer. I'm only 16 years old. Now I'm learning Tailwind and Three.js . 
       I am a very purposeful and persistent person. I really like programming and I am sure that this will be my job 
     </motion.p>
+
+    <div className='mt-20 flex flex-wrap gap-10'>
+      {services.map((service, index) => ( 
+        <ServiceCard key={services.title} index={index} {...services} />
+      ))}
+    </div>
+    
     </>
   )
 }
 
-export default About
+export default SectionWrapper(About, "about");
