@@ -8,7 +8,7 @@ import { fadeIn, textVariant } from '../utils/motion'
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <p> {title} </p>
+    <Tilt className="xs:w-[250px] w-full"> {title} </Tilt>
   )
 }
 
@@ -24,12 +24,12 @@ const About = () => {
       className='mt-4 text-secondary text-[17px] max-w-2xl leading-[30px]'
     > 
       Hello, I'm React programer. I'm only 16 years old. Now I'm learning Tailwind and Three.js . 
-      I am a very purposeful and persistent person. I really like programming and I am sure that this will be my job 
+      I am a very purposeful, persistent person and quick learner. I really like programming and I am sure that this will be my job 
     </motion.p>
 
     <div className='mt-20 flex flex-wrap gap-10'>
       {services.map((service, index) => ( 
-        <ServiceCard key={services.title} index={index} {...services} />
+        <ServiceCard key={service.title} index={index} {...service} />
       ))}
     </div>
     
@@ -37,4 +37,4 @@ const About = () => {
   )
 }
 
-export default SectionWrapper(About, "about");
+export default About;
