@@ -47,7 +47,7 @@ const About = () => {
       I am a very purposeful, persistent person and quick learner. I really like programming and I am sure that this will be my job 
     </motion.p>
 
-    <div className='mt-20 flex flex-wrap gap-10'>
+    <div className='mt-20 flex flex-wrap gap-10 justify-center'>
       {services.map((service, index) => ( 
         <ServiceCard key={service.title} index={index} {...service} />
       ))}
