@@ -2,7 +2,7 @@ import React from 'react'
 
 const Earth = () => {
   return (
-    <div>Earth</div>
+    <div></div>
   )
 }
 
