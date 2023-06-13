@@ -30,9 +30,7 @@ const ServiceCard = ({ index, title, icon }) => {
        </motion.div>
     </Tilt>
   )
-}//for commit
-//xD
-//Why I'm doing this?
+}
 
 const About = () => {
   return (
