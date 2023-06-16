@@ -30,7 +30,7 @@ const Computers = ({ isMobile }) => {
       position = {isMobile ? [0, -3.5, -2.2] : [0, -3.5, -1.5]}
       rotation ={[-0.01, -0.2, -0.1]}
       />
-    </mesh> //mesh using for light
+    </mesh> //mesh using for light //primitive for scale and response
   )
 }
 
