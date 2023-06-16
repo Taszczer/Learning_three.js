@@ -15,7 +15,7 @@ export const textVariant = (delay) => {
       },
     };
   };
-  
+  //Z prawej strony przesuwa się na lewą
   export const fadeIn = (direction, type, delay, duration) => {
     return {
       hidden: {
