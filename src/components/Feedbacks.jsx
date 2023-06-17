@@ -1,10 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Feedbacks = () => {
-  return (
-    <div>Feedbacks</div>
-  )
-} //amogus
+  return <div>Feedbacks</div>;
+}; //amogus
 
-export default Feedbacks 
-
+export default Feedbacks;
