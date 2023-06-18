@@ -1,17 +1,17 @@
-import React from "react";
+import React from "react"
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
+} from "react-vertical-timeline-component"
+import { motion } from "framer-motion"
 
-import "react-vertical-timeline-component/style.min.css";
+import "react-vertical-timeline-component/style.min.css"
 
-import { styles } from "../styles";
-import { experiences } from "../constants";
+import { styles } from "../styles"
+import { experiences } from "../constants"
 
-import { textVariant } from "../utils/motion";
-import { SectionWrapper } from "../hoc";
+import { textVariant } from "../utils/motion"
+import { SectionWrapper } from "../hoc"
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -32,10 +32,16 @@ const ExperienceCard = ({ experience }) => {
     >
       <div>
         <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+
+        <ul className=" text-blue-300 list-disc ml-5 space-y-2">
+          {experience.points.map((point, index) => (
+            <li key={` experience-point-${index} `}>{point}</li>
+          ))}
+        </ul>
       </div>
     </VerticalTimelineElement>
-  );
-};
+  )
+}
 
 const Experience = () => {
   return (
@@ -53,7 +59,7 @@ const Experience = () => {
         </VerticalTimeline>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Experience, "work")
