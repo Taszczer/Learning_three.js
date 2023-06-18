@@ -1,12 +1,12 @@
-import { Suspense, useEffect, useState } from "react";
-import { Canvas } from "@react-three/fiber";
+import { Suspense, useEffect, useState } from "react"
+import { Canvas } from "@react-three/fiber"
 
-import { OrbitControls, Preload, meshBounds, useGLTF } from "@react-three/drei";
+import { OrbitControls, Preload, meshBounds, useGLTF } from "@react-three/drei"
 
-import CanvasLoader from "../Loader";
+import CanvasLoader from "../Loader"
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf"); //importing model
+  const computer = useGLTF("./desktop_pc/scene.gltf") //importing model
 
   return (
     <mesh>
@@ -27,27 +27,27 @@ const Computers = ({ isMobile }) => {
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh> //mesh using for light //primitive for scale and response
-  );
-};
+  )
+}
 
 const ComputersCanvas = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 600px)");
+    const mediaQuery = window.matchMedia("(max-width: 600px)")
 
-    setIsMobile(mediaQuery.matches); //true mediaQuery
+    setIsMobile(mediaQuery.matches) //true mediaQuery
 
     const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    };
+      setIsMobile(event.matches)
+    }
 
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
+    mediaQuery.addEventListener("change", handleMediaQueryChange)
 
     return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-    };
-  }, []);
+      mediaQuery.removeEventListener("change", handleMediaQueryChange)
+    }
+  }, [])
 
   return (
     <Canvas
@@ -67,7 +67,7 @@ const ComputersCanvas = () => {
 
       <Preload all />
     </Canvas>
-  );
-};
+  )
+}
 
-export default ComputersCanvas;
+export default ComputersCanvas
