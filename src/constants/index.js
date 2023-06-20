@@ -91,11 +91,6 @@ const technologies = [
     icon: threejs,
   },
 
-  {
-    name: "figma",
-    icon: figma,
-  },
-
 ];
 
 const experiences = [
