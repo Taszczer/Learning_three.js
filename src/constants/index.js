@@ -179,7 +179,7 @@ const projects = [
   {
     name: "Carboleon",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Carboleon is a site where you can find out about your air quality in the city and the importance of fresh air, as well as find out about the weather in the near future",
     tags: [
       {
         name: "react",
@@ -200,7 +200,7 @@ const projects = [
   {
     name: "Recrash",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Recrash is a site where you will learn the importance of garbage. Where should you throw out garbage that threatens nature. And also where are the garbage cans in your city",
     tags: [
       {
         name: "nextjs",
