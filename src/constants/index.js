@@ -185,12 +185,9 @@ const projects = [
         name: "react",
         color: "blue-text-gradient",
       },
+
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
+        name: "css",
         color: "pink-text-gradient",
       },
     ],
@@ -203,15 +200,12 @@ const projects = [
       "Recrash is a site where you will learn the importance of garbage. Where should you throw out garbage that threatens nature. And also where are the garbage cans in your city",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
+
       {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
