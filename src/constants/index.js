@@ -177,7 +177,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Carboleon",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -198,7 +198,7 @@ const projects = [
   },
 
   {
-    name: "Trip Guide",
+    name: "Recrash",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [

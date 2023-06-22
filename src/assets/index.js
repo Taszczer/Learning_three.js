@@ -57,6 +57,5 @@ export {
   starbucks,
   tesla,
   carrent,
-
-  tripguide,
+  tripguide
 };

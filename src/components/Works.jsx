@@ -31,6 +31,22 @@ const ProjectCard = ({
             className="w-full h-full object-cover rounded-2xl"
           />
         </div>
+
+        <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
+            <a
+              href="https://github.com/Taszczer"
+              className="w-1/2 h-1/2 object-contain"
+            >
+              <img src={github} alt="github" />
+            </a>
+          </div>
+        </div>
+
+        <div className="mt-5">
+          <h3>{name}</h3>
+          <p>{description}</p>
+        </div>
       </Tilt>
     </motion.div>
   )
