@@ -28,6 +28,7 @@ const FeedbackCard = ({
           </p>
           <p className="mt-1 text-secondary text-[12px]">{ designation } of { company }</p>
         </div>
+        <img src={ image } alt={name} className="w-10 h-10 object-cover rounded-full"/>
       </div>
     </div>   
 
@@ -42,7 +43,7 @@ const Feedbacks = () => {
       >
         <motion.div variants={textVariant}>
           <p className={styles.sectionSubText}>What other say</p>
-          <h2 className={styles.sectionHeadText}>Testimonails</h2>
+          <h2 className={styles.sectionHeadText}>Testimonials</h2>
         </motion.div>
       </div>
       <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
