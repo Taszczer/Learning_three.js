@@ -28,10 +28,6 @@ const Contact = () => {
     e.preventDefault()
     setLoading(true)
 
-    //_nU9Escszm12DMiNI
-    //template_6et3kr6
-    //service_ayx7qjy
-
     emailjs
       .send(
         "service_ayx7qjy",
