@@ -21,11 +21,48 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target
-
     useForm({ ...form, [name]: value })
   }
 
-  const handleSubmit = (e) => {}
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setLoading(true)
+
+    //_nU9Escszm12DMiNI
+    //template_6et3kr6
+    //service_ayx7qjy
+
+    emailjs
+      .send(
+        "service_ayx7qjy",
+        "template_6et3kr6",
+        {
+          from_name: form.name,
+          to_name: "Gmail",
+          from_email: form.email,
+          to_email: "dima2019mega@gmail.com",
+          message: form.message,
+        },
+        "_nU9Escszm12DMiNI"
+      )
+      .then(
+        () => {
+          setLoading(false)
+          alert("Thank you for your email.")
+
+          useForm({
+            name: "",
+            email: "",
+            message: "",
+          })
+        },
+        (error) => {
+          setLoading(false)
+          console.log(error)
+          alert("Ups something went wrong")
+        }
+      )
+  }
 
   return (
     <div
@@ -49,9 +86,10 @@ const Contact = () => {
             <input
               type="text"
               name="name"
-              value={handleChange}
+              value={form.name}
               placeholder="What's your name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              onChange={handleChange}
             />
           </label>
 
@@ -63,6 +101,7 @@ const Contact = () => {
               value={form.email}
               placeholder="What's your email?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              onChange={handleChange}
             />
           </label>
 
@@ -71,9 +110,10 @@ const Contact = () => {
             <textarea
               rows="7"
               name="message"
-              value={handleChange}
+              value={form.message}
               placeholder="What do you want to say?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              onChange={handleChange}
             />
           </label>
 
